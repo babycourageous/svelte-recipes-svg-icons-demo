@@ -1,0 +1,103 @@
+html, body {
+	position: relative;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #333;
+  background: #F7FAFC;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h2 {
+	margin: 0;padding: 0;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 1.5rem
+}
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+input[type="range"] {
+	height: 0;
+}
+
+button {
+	color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: #ddd;
+}
+
+button:focus {
+	border-color: #666;
+}
+
+svg{ 
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+pre, code {
+	white-space: pre-wrap !important;
+}
+table {
+width: 100%;
+font-size: 1rem;
+font-family: Montserrat, sans-serif;
+}
+td,th {
+	padding: .25rem .5rem;
+	text-align: left;
+	border-bottom: 1px solid #EDF2F7;
+}
+td:first-child,th:first-child {
+	padding-left: 0;
+}
+td:last-child,th:last-child {
+	padding-right: 0;
+}

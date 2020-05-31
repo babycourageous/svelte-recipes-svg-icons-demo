@@ -1,0 +1,96 @@
+<script>
+import Icon from './components/Icon.svelte'
+import Bell from './icons/Bell.svelte'
+import ExclamationCircle from './icons/ExclamationCircle.svelte'
+import Calendar from './icons/Calendar.svelte'
+import Mail from './icons/Mail.svelte'
+import PencilAlt from './icons/PencilAlt.svelte'
+import Photograph from './icons/Photograph.svelte'
+import Star from './icons/Star.svelte'
+import Trash from './icons/Trash.svelte'
+</script>
+
+
+## Static Icons
+
+| prop      | type   | default      | required |
+|-----------|--------|--------------|----------|
+| width     | `number` | 16           | no       |
+| height    | `number` | 16           | no       |
+| color | `string` | currentColor | no       |
+| name  | `string` |              | yes      |
+
+### width and height
+
+You can make inline icons of any size by passing `width` and `height` props:
+
+<Icon width="12" height="12" name="pencilAlt"><PencilAlt /></Icon>
+<Icon name="pencilAlt"><PencilAlt /></Icon>
+<Icon width="32" height="32" name="pencilAlt"><PencilAlt /></Icon>
+
+
+```html
+<!-- you can pass in a smaller width and height -->
+<Icon width="12" height="12" name="pencilAlt"><PencilAlt /></Icon>
+<!-- or you can use the default, which is 16 -->
+<Icon name="pencilAlt"><PencilAlt /></Icon>
+<!-- or bump up the size, too -->
+<Icon width="32" height="32" name="pencilAlt"><PencilAlt /></Icon>
+```
+
+### textColor
+
+You can change the icon color with the `color` prop:
+
+<Icon color="#ff3e00" width="12" height="12" name="pencilAlt"><PencilAlt /></Icon>
+<Icon color="#ff3e00" name="pencilAlt"><PencilAlt /></Icon>
+<Icon color="#ff3e00" width="32" height="32" name="pencilAlt"><PencilAlt /></Icon>
+
+```html
+<Icon color="#ff3e00" width="12" height="12" name="pencilAlt"><PencilAlt /></Icon>
+<Icon color="#ff3e00" name="pencilAlt"><PencilAlt /></Icon>
+<Icon color="#ff3e00" width="32" height="32" name="pencilAlt"><PencilAlt /></Icon>
+```
+
+Or you can use the parent element's text color:
+
+<p class="red">
+<Icon name="moon">
+<ExclamationCircle />
+</Icon>
+This red inline icon is automatically styled according to the parent text color.
+</p>
+
+```html
+<p class="red">
+  <Icon name="moon">
+  <ExclamationCircle />
+  </Icon>
+  This red inline icon is automatically styled according to the parent text color.
+</p>
+
+<style>
+  .red {
+    color: red;
+  }
+</style>
+```
+
+### name
+
+The `name` prop is used for ARIA labels and the svg `title`.
+
+The slot system used means the base size of the svg stays consistent no matter what icon you use:
+
+<Icon name="Star"><Star /></Icon>
+<Icon name="PencilAlt"><PencilAlt /></Icon>
+<Icon name="Photograph"><Photograph /></Icon>
+<Icon name="Trash"><Trash /></Icon>
+<Icon name="Calendar"><Calendar /></Icon>
+<Icon name="Mail"><Mail /></Icon>
+
+<style>
+.red {
+color: red;
+}
+</style>

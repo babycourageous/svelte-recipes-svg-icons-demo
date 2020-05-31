@@ -1,0 +1,50 @@
+<script>
+import RegularIcons from './RegularIcons.svx'
+import AnimatedIcons from './AnimatedIcons.svx'
+import Watch from './icons/animated/Watch.svelte'
+</script>
+
+<main>
+
+# Svelte SVG Icon System Recipe Demo
+
+All static icons used in this demo are from [Heroicons](https://github.com/refactoringui/heroicons) by Steve Schoger using the [solid](https://github.com/refactoringui/heroicons/tree/master/solid) set. Animated icon example adapted from the [Vue Cookbook](https://vuejs.org/v2/cookbook/editable-svg-icons.html#Base-Example) demo.
+
+<section>
+<RegularIcons />
+</section>
+</main>
+
+<style>
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #222;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+h1 {
+margin: 0;
+padding: 0;
+font-size: 2em;
+font-weight: 400;
+color: #ff3e00;
+text-transform: uppercase;
+text-align: center;
+}
+section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.375rem;
+  border: 1px solid #A0AEC0;
+
+}
+</style>
