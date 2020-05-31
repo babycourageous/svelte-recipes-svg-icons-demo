@@ -4,4 +4,4 @@ A demo for the [Svelte Recipes](https://github.com/svelte-society/recipes-mvp/) 
 
 ![Demo Site](screenshot.png "Demo Site")
 
-Demo. 
+[Demo](https://svelte-recipes-svg-icons-demo.netlify.app) 
