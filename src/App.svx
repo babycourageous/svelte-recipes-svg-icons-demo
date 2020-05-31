@@ -6,7 +6,7 @@ import RegularIcons from './RegularIcons.svx'
 
 # Svelte SVG Icon System Recipe Demo
 
-All static icons used in this demo are from [Heroicons](https://github.com/refactoringui/heroicons) by Steve Schoger using the [solid](https://github.com/refactoringui/heroicons/tree/master/solid) set. Animated icon example adapted from the [Vue Cookbook](https://vuejs.org/v2/cookbook/editable-svg-icons.html#Base-Example) demo.
+All static icons used in this demo are from [Heroicons](https://github.com/refactoringui/heroicons) by Steve Schoger using the [solid](https://github.com/refactoringui/heroicons/tree/master/solid) set.
 
 <section>
 <RegularIcons />
