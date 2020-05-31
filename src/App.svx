@@ -1,7 +1,5 @@
 <script>
 import RegularIcons from './RegularIcons.svx'
-import AnimatedIcons from './AnimatedIcons.svx'
-import Watch from './icons/animated/Watch.svelte'
 </script>
 
 <main>
